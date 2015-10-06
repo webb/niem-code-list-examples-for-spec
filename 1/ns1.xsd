@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<schema
+   ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ReferenceSchemaDocument"
+   targetNamespace="http://example.org/ns1/"
+   version="1"
+   xmlns:appinfo="http://release.niem.gov/niem/appinfo/3.0/"
+   xmlns:cli="http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-instance/"
+   xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+   xmlns:ns1="http://example.org/ns1/"
+   xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns="http://www.w3.org/2001/XMLSchema">
+
+  <annotation>
+    <documentation>This is a schema for namespace 1.</documentation>
+  </annotation>
+
+  <import namespace="http://release.niem.gov/niem/structures/3.0/"/>
+  <import namespace="http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-instance/"/>
+
+  <element name="Document" type="ns1:DocumentType"/>
+  
+  <complexType name="DocumentType">
+    <complexContent>
+      <extension base="structures:ObjectType">
+        <sequence>
+          <element ref="ns1:Entry" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <element name="Entry" abstract="true"/>
+  <element name="DynamicEntry" type="cli:CodeType" substitutionGroup="ns1:Entry"/>
+
+  <element name="StaticEntry" substitutionGroup="ns1:Entry"
+           type="ns1:HazmatTitle49CodeType">
+    <annotation>
+      <appinfo>
+        <sch:assert test="
+                          six:resolve(.)/text() ></sch:assert>
+      </appinfo>
+    </annotation>
+    </element>
+
+  <complexType name="HazmatTitle49CodeType">
+    <annotation>
+      <appinfo>
+        <sch:assert ="></sch:assert>
+      </appinfo>
+    </annotation>
+  </complexType>
+  
+</schema>
+<!--
+Local Variables:
+mode: sgml
+indent-tabs-mode: nil
+fill-column: 9999
+End:
+-->

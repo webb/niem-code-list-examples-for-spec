@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+
+  <uri 
+      name="http://example.org/ns1/"
+      uri="ns1-generic.xsd"/>
+
+  <uri
+      name="http://example.org/hazmat/13.7.2/"
+      uri="HazmatTitle49Code.gc"/>
+
+  <uri 
+      name="http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-instance/"
+      uri="../../dest/code-lists-instance.xsd"/>
+
+  <uri
+      name="http://release.niem.gov/niem/structures/3.0/"
+      uri="../../../../release/distro/niem/structures/3.0/structures.xsd"/>
+
+</catalog>
