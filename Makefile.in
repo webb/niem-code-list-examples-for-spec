@@ -1,0 +1,45 @@
+
+SHELL = @bash@ -o pipefail -o nounset -o errexit
+
+MKDIR_P = @MKDIR_P@
+INSTALL = @INSTALL@
+SED = @SED@
+AWK = @AWK@
+
+spec_dir=@spec_dir@
+
+#HELP:Configured with:
+#HELP:  spec_dir=@spec_dir@ : Provides the directory of the specification distribution
+
+all_files = \
+	from-spec/code-lists-instance.xsd \
+	from-spec/code-lists-schema-appinfo.xsd \
+	make-model-spreadsheet/vma.gc \
+	make-model-spreadsheet/vmo.gc \
+	make-model-spreadsheet/vma-vmo.gc \
+
+.PHONY: default
+default: all
+
+.PHONY: all # Build the usual suspects
+all: ${all_files}
+
+.PHONY: help # Print this help
+help:
+	@ grep '#HELP'':' Makefile | sed -e 's/.*#HELP''://'
+	@ echo Available targets:
+	@ sed -e 's/^.PHONY: *\([^ #]*\) *\# *\(.*\)$$/  \1: \2/p;d' Makefile
+
+from-spec/%.xsd: ${spec_dir}/%.xsd
+	${MKDIR_P} ${dir $@}
+	${INSTALL} $< $@
+
+make-model-spreadsheet/%.gc:
+	${MAKE} -C ${dir $@} ${notdir $@}
+
+.PHONY: distclean # Remove products of configure
+distclean: clean
+	${RM} Makefile
+
+.PHONY: clean # Remove products of make
+clean:
