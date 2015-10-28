@@ -1,0 +1,10 @@
+.mode csv
+.import manual.csv mm
+.mode csv
+.headers on
+.output vmo.csv
+SELECT vmo, model
+FROM mm
+WHERE vmo <> ''
+GROUP BY vmo
+ORDER BY vmo;

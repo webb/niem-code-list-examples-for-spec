@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -o errexit -o pipefail -o nounset
+
+. "$HOME"/share/wrtools-core/fail.bash
+
+(( $# == 1 )) || fail "expected 1 arg (got $#)"
+
+file_type=$(file --brief "$1")
+case $file_type in
+    "Non-ISO extended-ASCII English text, with CR line terminators" )
+    * ) printf "Unknown file type: \"$file_type\"\n"
+        exit 1
+        ;;
+esac
+
+ 
