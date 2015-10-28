@@ -1,21 +1,16 @@
 
-all_files = \
-	vma.table.xml \
-	vmo.table.xml \
-	vma-vmo.table.xml \
-	make-model.csv.in-sqlite \
-	vma.csv \
-	vmo.csv \
-	vma-vmo.csv \
+names = vma vmo vma-vmo
 
+all_files = \
+	${names:%=%.gc} \
+	make-model.csv.in-sqlite \
 
 .PHONY: default
 default: ${all_files}
 
 .PHONY: clean
 clean:
-	${RM} vma.csv vmo.csv vma-vmo.csv
-	${RM} vma.table.xml vmo.table.xml vma-vmo.table.xml
+	${RM} ${names:%=%.csv} ${names:%=%.table.xml} ${names:%=%.gc}
 	${RM} ${wildcard *~}
 
 make-model.csv.in-sqlite: make-model.csv
@@ -32,3 +27,6 @@ vma-vmo.csv: manual.csv to-vma.sq3
 
 %.table.xml: %.csv
 	csv-to-xml -o $@ $<
+
+%.gc: %.csv %.gch
+	csv-to-gc -o $@ $*.csv $*.gch

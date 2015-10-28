@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+   <Identification>
+      <ShortName>VMA</ShortName>
+      <Version>1</Version>
+      <CanonicalUri>http://example.org/vma</CanonicalUri>
+      <CanonicalVersionUri>http://example.org/vma/1</CanonicalVersionUri>
+   </Identification>
+   <ColumnSet>
+     <Column Id="c1" Use="required">
+       <ShortName>vma</ShortName>
+       <Data Type="token"/>
+      </Column>
+      <Column Id="c2" Use="required">
+         <ShortName>make</ShortName>
+         <Data Type="string" Lang="en"/>
+      </Column>
+      <Key Id="k1">
+        <ShortName>Key</ShortName>
+        <ColumnRef Ref="c1"></ColumnRef>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList/>
+</gc:CodeList>
+<!--
+Local Variables:
+mode: sgml
+indent-tabs-mode: nil
+fill-column: 9999
+End:
+-->
