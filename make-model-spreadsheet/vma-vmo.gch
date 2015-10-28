@@ -3,8 +3,8 @@
    <Identification>
       <ShortName>VMA</ShortName>
       <Version>1</Version>
-      <CanonicalUri>http://example.org/vma</CanonicalUri>
-      <CanonicalVersionUri>http://example.org/vma/1</CanonicalVersionUri>
+      <CanonicalUri>http://example.org/vma-vmo</CanonicalUri>
+      <CanonicalVersionUri>http://example.org/vma-vmo/1</CanonicalVersionUri>
    </Identification>
    <ColumnSet>
      <Column Id="col-vma" Use="required">

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://example.org/extension/" uri="extension.xsd"/>
+  <uri name="http://example.org/vma-vmo" uri="gc/vma-vmo.gc"/>
+  <uri name="http://example.org/vma" uri="gc/vma.gc"/>
+  <uri name="http://example.org/vmo" uri="gc/vmo.gc"/>
+  <nextCatalog catalog="niem-subset/xml-catalog.xml"/>
+</catalog>

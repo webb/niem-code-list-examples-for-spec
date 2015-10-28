@@ -7,17 +7,17 @@
       <CanonicalVersionUri>http://example.org/vma/1</CanonicalVersionUri>
    </Identification>
    <ColumnSet>
-     <Column Id="c1" Use="required">
+     <Column Id="col-vma" Use="required">
        <ShortName>vma</ShortName>
        <Data Type="token"/>
       </Column>
-      <Column Id="c2" Use="required">
+      <Column Id="col-make" Use="required">
          <ShortName>make</ShortName>
          <Data Type="string" Lang="en"/>
       </Column>
       <Key Id="k1">
         <ShortName>Key</ShortName>
-        <ColumnRef Ref="c1"></ColumnRef>
+        <ColumnRef Ref="col-vma"></ColumnRef>
       </Key>
    </ColumnSet>
    <SimpleCodeList/>

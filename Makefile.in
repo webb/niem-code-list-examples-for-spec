@@ -43,3 +43,6 @@ distclean: clean
 
 .PHONY: clean # Remove products of make
 clean:
+	${MAKE} -C make-model-spreadsheet clean
+	${MAKE} -C example-extension-schema clean
+

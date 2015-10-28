@@ -7,17 +7,17 @@
       <CanonicalVersionUri>http://example.org/vmo/1</CanonicalVersionUri>
    </Identification>
    <ColumnSet>
-     <Column Id="c1" Use="required">
+     <Column Id="col-vmo" Use="required">
        <ShortName>vmo</ShortName>
        <Data Type="token"/>
       </Column>
-      <Column Id="c2" Use="required">
+      <Column Id="col-model" Use="required">
          <ShortName>model</ShortName>
          <Data Type="string" Lang="en"/>
       </Column>
       <Key Id="k1">
         <ShortName>Key</ShortName>
-        <ColumnRef Ref="c1"></ColumnRef>
+        <ColumnRef Ref="col-vmo"></ColumnRef>
       </Key>
    </ColumnSet>
    <SimpleCodeList/>
