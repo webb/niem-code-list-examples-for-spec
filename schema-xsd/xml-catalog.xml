@@ -1,0 +1,8 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <uri 
+     name="http://www.w3.org/2001/XMLSchema"
+     uri="XMLSchema.xsd"/>
+  <public 
+     publicId="-//W3C//DTD XMLSCHEMA 200102//EN"
+     uri="XMLSchema.dtd"/>
+</catalog>

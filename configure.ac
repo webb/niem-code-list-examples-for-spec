@@ -33,6 +33,20 @@ then AC_MSG_ERROR([spec_dir $spec_dir is not an existing dir])
 else AC_SUBST([spec_dir], [$spec_dir])
 fi
 
+if test "x$xsd_dir" = "x"
+then AC_MSG_ERROR([Variable xsd_dir not set.])
+elif test ! -d "$xsd_dir"
+then AC_MSG_ERROR([xsd_dir $xsd_dir is not an existing dir])
+else AC_SUBST([xsd_dir], [$xsd_dir])
+fi
+
+if test "x$xml_dir" = "x"
+then AC_MSG_ERROR([Variable xml_dir not set.])
+elif test ! -d "$xml_dir"
+then AC_MSG_ERROR([xml_dir $xml_dir is not an existing dir])
+else AC_SUBST([xml_dir], [$xml_dir])
+fi
+
 dnl WR_check_prog( $command-name )
 dnl   e.g., WR_check_prog(bash) will set @bash@
 AC_DEFUN([WR_check_prog],[AC_PATH_PROG($1,$1)
@@ -59,5 +73,5 @@ WR_check_prog_options(xs_validate,xs-validate)
 
 # Checks for library functions.
 
-AC_CONFIG_FILES([Makefile], [chmod 444 Makefile])
+AC_CONFIG_FILES([import.mk], [chmod 444 import.mk])
 AC_OUTPUT

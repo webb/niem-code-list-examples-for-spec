@@ -596,6 +596,8 @@ schematron
 saxon
 m4
 bash
+xml_dir
+xsd_dir
 spec_dir
 SED
 MKDIR_P
@@ -1928,6 +1930,22 @@ else spec_dir=$spec_dir
 
 fi
 
+if test "x$xsd_dir" = "x"
+then as_fn_error $? "Variable xsd_dir not set." "$LINENO" 5
+elif test ! -d "$xsd_dir"
+then as_fn_error $? "xsd_dir $xsd_dir is not an existing dir" "$LINENO" 5
+else xsd_dir=$xsd_dir
+
+fi
+
+if test "x$xml_dir" = "x"
+then as_fn_error $? "Variable xml_dir not set." "$LINENO" 5
+elif test ! -d "$xml_dir"
+then as_fn_error $? "xml_dir $xml_dir is not an existing dir" "$LINENO" 5
+else xml_dir=$xml_dir
+
+fi
+
 
 
 # Extract the first word of "bash", so it can be a program name with args.
@@ -2231,7 +2249,7 @@ done
 
 # Checks for library functions.
 
-ac_config_files="$ac_config_files Makefile"
+ac_config_files="$ac_config_files import.mk"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -2940,7 +2958,7 @@ cat >>$CONFIG_STATUS <<\_ACEOF || ac_write_fail=1
 for ac_config_target in $ac_config_targets
 do
   case $ac_config_target in
-    "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+    "import.mk") CONFIG_FILES="$CONFIG_FILES import.mk" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac
@@ -3367,7 +3385,7 @@ which seems to be undefined.  Please make sure it is defined" >&2;}
 
 
   case $ac_file$ac_mode in
-    "Makefile":F) chmod 444 Makefile ;;
+    "import.mk":F) chmod 444 import.mk ;;
 
   esac
 done # for ac_tag
