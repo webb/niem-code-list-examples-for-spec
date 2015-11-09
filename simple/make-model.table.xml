@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<table xmlns="http://wr.gatech.edu/namespace/table/">
+<row>
+  <column>Make code</column>
+  <column>Make description</column>
+  <column>Model code</column>
+  <column>Model description</column>
+  <column>Class</column>
+</row>
+<row>
+  <column>FORD</column>
+  <column>Ford</column>
+  <column>FUS</column>
+  <column>Fusion</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>HOND</column>
+  <column>Honda</column>
+  <column>CIV</column>
+  <column>Civic</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>HOND</column>
+  <column>Honda</column>
+  <column>CRV</column>
+  <column>CRV</column>
+  <column>SUV</column>
+</row>
+<row>
+  <column>DODG</column>
+  <column>Dodge</column>
+  <column>R15</column>
+  <column>Ram 1500</column>
+  <column>Pickup</column>
+</row>
+<row>
+  <column>NISS</column>
+  <column>Nissan</column>
+  <column>ALT</column>
+  <column>Altima</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>FORD</column>
+  <column>Ford</column>
+  <column>F15</column>
+  <column>F-150</column>
+  <column>Pickup</column>
+</row>
+<row>
+  <column>TOYT</column>
+  <column>Toyota</column>
+  <column>COA</column>
+  <column>Corolla</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>FORD</column>
+  <column>Ford</column>
+  <column>500</column>
+  <column>Five Hundred</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>HOND</column>
+  <column>Honda</column>
+  <column>ACC</column>
+  <column>Accord</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>TOYT</column>
+  <column>Toyota</column>
+  <column>CAM</column>
+  <column>Camry</column>
+  <column>Auto</column>
+</row>
+<row>
+  <column>CHEV</column>
+  <column>Chevrolet</column>
+  <column>SLV</column>
+  <column>Silverado</column>
+  <column>Pickup</column>
+</row>
+<row>
+  <column>MERZ</column>
+  <column>Mercedes-Benz</column>
+  <column>500</column>
+  <column>500 Series</column>
+  <column>Auto</column>
+</row>
+</table>

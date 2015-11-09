@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<nothing:container xmlns:doc="https://iead.ittl.gtri.org/wr24/doc/2011-09-30-2258"
+                   xmlns:nothing="http://example.org/nothing"
+                   xmlns:table="http://wr.gatech.edu/namespace/table/">
+   <doc:theadr>
+      <doc:th>Make code</doc:th>
+      <doc:th>Make description</doc:th>
+      <doc:th>Model code</doc:th>
+      <doc:th>Model description</doc:th>
+      <doc:th>Class</doc:th>
+   </doc:theadr>
+   <doc:tr>
+      <doc:td>FORD</doc:td>
+      <doc:td>Ford</doc:td>
+      <doc:td>FUS</doc:td>
+      <doc:td>Fusion</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>HOND</doc:td>
+      <doc:td>Honda</doc:td>
+      <doc:td>CIV</doc:td>
+      <doc:td>Civic</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>HOND</doc:td>
+      <doc:td>Honda</doc:td>
+      <doc:td>CRV</doc:td>
+      <doc:td>CRV</doc:td>
+      <doc:td>SUV</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>DODG</doc:td>
+      <doc:td>Dodge</doc:td>
+      <doc:td>R15</doc:td>
+      <doc:td>Ram 1500</doc:td>
+      <doc:td>Pickup</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>NISS</doc:td>
+      <doc:td>Nissan</doc:td>
+      <doc:td>ALT</doc:td>
+      <doc:td>Altima</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>FORD</doc:td>
+      <doc:td>Ford</doc:td>
+      <doc:td>F15</doc:td>
+      <doc:td>F-150</doc:td>
+      <doc:td>Pickup</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>TOYT</doc:td>
+      <doc:td>Toyota</doc:td>
+      <doc:td>COA</doc:td>
+      <doc:td>Corolla</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>FORD</doc:td>
+      <doc:td>Ford</doc:td>
+      <doc:td>500</doc:td>
+      <doc:td>Five Hundred</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>HOND</doc:td>
+      <doc:td>Honda</doc:td>
+      <doc:td>ACC</doc:td>
+      <doc:td>Accord</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>TOYT</doc:td>
+      <doc:td>Toyota</doc:td>
+      <doc:td>CAM</doc:td>
+      <doc:td>Camry</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>CHEV</doc:td>
+      <doc:td>Chevrolet</doc:td>
+      <doc:td>SLV</doc:td>
+      <doc:td>Silverado</doc:td>
+      <doc:td>Pickup</doc:td>
+   </doc:tr>
+   <doc:tr>
+      <doc:td>MERZ</doc:td>
+      <doc:td>Mercedes-Benz</doc:td>
+      <doc:td>500</doc:td>
+      <doc:td>500 Series</doc:td>
+      <doc:td>Auto</doc:td>
+   </doc:tr>
+</nothing:container>
