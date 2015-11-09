@@ -1,0 +1,9 @@
+.mode csv
+.import make-model.csv.txt mm
+.mode csv
+.headers on
+.output vma.csv
+SELECT "Make code","Make description"
+FROM mm
+GROUP BY "Make code"
+ORDER BY "Make code";

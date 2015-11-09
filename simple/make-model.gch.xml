@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/">
+   <Identification>
+      <ShortName>VMA</ShortName>
+      <Version>1</Version>
+      <CanonicalUri>http://example.org/code-list/vehicle-make-model</CanonicalUri>
+      <CanonicalVersionUri>http://example.org/code-list/vehicle-make-model/2013-03-05</CanonicalVersionUri>
+   </Identification>
+   <ColumnSet>
+     <Column Id="make" Use="required">
+       <ShortName>Make code</ShortName>
+       <Data Type="token"/>
+      </Column>
+      <Column Id="make-descr" Use="required">
+         <ShortName>Make description</ShortName>
+         <Data Type="string"/>
+      </Column>
+     <Column Id="model" Use="required">
+       <ShortName>Model code</ShortName>
+       <Data Type="token"/>
+      </Column>
+      <Column Id="model-descr" Use="required">
+         <ShortName>Mode description</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="class" Use="required">
+         <ShortName>Class</ShortName>
+         <Data Type="token"/>
+      </Column>
+      <Key Id="key-make-model">
+        <ShortName>Key</ShortName>
+        <ColumnRef Ref="make"/>
+        <ColumnRef Ref="model"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList/>
+</gc:CodeList>
